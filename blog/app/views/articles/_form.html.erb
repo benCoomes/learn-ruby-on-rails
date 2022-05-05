@@ -16,6 +16,12 @@
   </div>
 
   <div>
+    <!-- todo: a way to not hard-code these and take them from VALID_STATUSES ? -->
+    <%= form.label :status %><br>
+    <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+  </div>
+
+  <div>
     <%= form.submit%>
   </div>
 <% end %>
